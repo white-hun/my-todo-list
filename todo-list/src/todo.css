@@ -13,13 +13,16 @@
 }
 .ul {
   width: 450px;
-  height: 300px;
+  height: 320px;
 }
 .li {
   display: flex;
   align-items: center;
   list-style: none;
   justify-content: space-between;
+}
+.list-item {
+  z-index: 1;
 }
 .title {
   display: flex;

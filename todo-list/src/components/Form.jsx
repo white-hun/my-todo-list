@@ -23,10 +23,11 @@ export default function Form() {
   return (
     <div>
       <div className="list-box">
+        <Icon />
         <ul className="ul">
           {toDos.map((prev, index) => (
             <li className="li" key={index}>
-              <div>
+              <div className="list-item">
                 <input className="check-box" type="checkbox" onClick={onCheck}></input>
                 {prev}
               </div>
@@ -37,7 +38,6 @@ export default function Form() {
           ))}
         </ul>
       </div>
-      <Icon />
       <form onSubmit={onSubmit} className="form">
         <input
           className="input"
