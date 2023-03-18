@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { BsTrash } from "react-icons/bs";
+import { DarkModeContext } from "../context/DarkModeContext";
 import Icon from "./Icon";
 
 export default function Form() {
   const [toDo, setTodo] = useState("");
   const [toDos, setTodos] = useState([]);
+  const { theme } = useContext(DarkModeContext);
   const onSubmit = (e) => {
     e.preventDefault();
     toDo !== "" && setTodos((current) => [toDo, ...current]);
@@ -26,12 +28,28 @@ export default function Form() {
         <Icon />
         <ul className="ul">
           {toDos.map((prev, index) => (
-            <li className="li" key={index}>
+            <li
+              style={{
+                backgroundColor: theme === "light" ? "#ffffff" : "#20232a",
+                color: theme === "light" ? "#20232a" : "#ffffff",
+                transition: "0.3s",
+              }}
+              className="li"
+              key={index}
+            >
               <div className="list-item">
                 <input className="check-box" type="checkbox" onClick={onCheck}></input>
                 {prev}
               </div>
-              <button className="delete-button" onClick={onDelete}>
+              <button
+                className="delete-button"
+                onClick={onDelete}
+                style={{
+                  // backgroundColor: theme === "light" ? "#ffffff" : "#20232a",
+                  color: theme === "light" ? "#000000" : "#61dafb",
+                  transition: "0.3s",
+                }}
+              >
                 <BsTrash />
               </button>
             </li>
@@ -45,8 +63,22 @@ export default function Form() {
           placeholder="Write & Enter"
           onChange={onChange}
           value={toDo}
+          style={{
+            backgroundColor: theme === "light" ? "#ffffff" : "#20232a",
+            color: theme === "light" ? "#20232a" : "#ffffff",
+            transition: "0.3s",
+          }}
         ></input>
-        <button className="button">Submit</button>
+        <button
+          className="submit-button"
+          style={{
+            backgroundColor: theme === "light" ? "#ffffff" : "#20232a",
+            color: theme === "light" ? "#20232a" : "#61dafb",
+            transition: "0.3s",
+          }}
+        >
+          Submit
+        </button>
       </form>
     </div>
   );

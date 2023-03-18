@@ -15,7 +15,7 @@ export default function Theme() {
         className="box"
         style={{
           backgroundColor: theme === "light" ? "#ffffff" : "#20232a",
-          color: theme === "light" ? "#6b7280" : "#61dafb",
+          color: theme === "light" ? "#20232a" : "#61dafb",
           transition: "0.3s",
         }}
       >
