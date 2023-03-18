@@ -73,7 +73,7 @@ export default function Form() {
           className="submit-button"
           style={{
             backgroundColor: theme === "light" ? "#ffffff" : "#20232a",
-            color: theme === "light" ? "#20232a" : "#61dafb",
+            color: theme === "light" ? "#20232a" : "#ffffff",
             transition: "0.3s",
           }}
         >

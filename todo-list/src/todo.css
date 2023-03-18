@@ -28,6 +28,12 @@
   display: flex;
   justify-content: center;
 }
+.form {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  border-top: 1px solid lightgrey;
+}
 .input {
   all: unset;
   caret-color: #00c6f7;
@@ -41,7 +47,8 @@
   outline: none;
   transition: 0.5s;
 }
-.input:hover {
+.input:hover,
+.input:focus {
   transition: 0.4s;
   border: 2px solid #00c6f7;
 }
@@ -55,9 +62,11 @@
   border-left: none;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  transition: 0.4s;
 }
 .submit-button:hover {
   transition: 0.4s;
+  border: 2px solid #00c6f7;
 }
 .delete-button {
   margin-top: 8px;
@@ -90,11 +99,6 @@
     transform: rotate(-20deg);
   }
 }
-
-.form {
-  width: 500px;
-  border-top: 1px solid lightgrey;
-}
 .box {
   display: flex;
   flex-direction: column;
@@ -102,7 +106,7 @@
   align-items: center;
   width: 520px;
   height: 500px;
-  border: 1px solid black;
+  border: none;
   border-radius: 20px;
 }
 .back {
