@@ -50,6 +50,7 @@
   margin-right: 10px;
 }
 .theme-button {
+  color: #00c6f7;
   margin-top: 8px;
   background: none;
   border: none;
@@ -58,7 +59,6 @@
 .theme-button:hover {
   transition: 0.3s;
   scale: 1.1;
-  color: grey;
 }
 .form {
   width: 500px;
@@ -66,6 +66,7 @@
 }
 .box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 520px;

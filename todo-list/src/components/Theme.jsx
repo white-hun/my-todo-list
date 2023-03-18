@@ -11,27 +11,28 @@ export default function Theme() {
   const { theme, toggleTheme } = useContext(DarkModeContext);
   return (
     <div className="back">
-      <div className="box">
-        <div
-          style={{
-            backgroundColor: theme === "light" ? "#ffffff" : "#20232a",
-            color: theme === "light" ? "#6b7280" : "#61dafb",
-            transition: "0.3s",
-          }}
-        >
-          <div className="nav">
+      <div
+        className="box"
+        style={{
+          backgroundColor: theme === "light" ? "#ffffff" : "#20232a",
+          color: theme === "light" ? "#6b7280" : "#61dafb",
+          transition: "0.3s",
+        }}
+      >
+        <div className="nav">
+          <div>
             <button className="theme-button" onClick={toggleTheme}>
               {theme === "light" ? <BsSun /> : <BsMoon />}
             </button>
-            <h1>My To-Do</h1>
-            <div className="container">
-              <All />
-              <Active />
-              <Completed />
-            </div>
           </div>
-          <Form />
+          <h1>My To-Do</h1>
+          <div className="container">
+            <All />
+            <Active />
+            <Completed />
+          </div>
         </div>
+        <Form />
       </div>
     </div>
   );
