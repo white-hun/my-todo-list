@@ -7,18 +7,13 @@ export default function Form() {
   const [toDo, setTodo] = useState("");
   const [toDos, setTodos] = useState([]);
   const { theme } = useContext(DarkModeContext);
-  const onSubmit = (e) => {
-    e.preventDefault();
-    toDo !== "" && setTodos((current) => [toDo, ...current]);
-    setTodo("");
-    // if (toDo === "") {
-    //   return;
-    // }
-    // setTodos((current) => [toDo, ...current]);
-    // setTodo("");
-  };
   const onChange = (e) => {
     setTodo(e.target.value);
+  };
+  const onSubmit = (e) => {
+    e.preventDefault();
+    toDo !== "" && setTodos((current) => [...current, toDo]);
+    setTodo("");
   };
   const onCheck = () => {};
   const onDelete = () => {};
