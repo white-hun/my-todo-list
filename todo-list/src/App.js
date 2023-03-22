@@ -51,7 +51,7 @@ export default function App() {
   const [filter, setFilter] = useState(filters[0]);
   return (
     <div>
-      <Header filters={filters} filter={filter} onChangeFilter={(filter) => setFilter(filter)} />
+      <Header filters={filters} filter={filter} onChangeFilter={(value) => setFilter(value)} />
       <TodoList filter={filter} />
     </div>
   );

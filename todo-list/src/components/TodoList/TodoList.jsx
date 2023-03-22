@@ -63,8 +63,8 @@ import Todo from "../Todo/Todo";
 
 export default function TodoList({ filter }) {
   const [todos, setTodos] = useState([
-    { id: "123", text: "청소하기", status: "active" },
-    { id: "124", text: "장보기", status: "active" },
+    // { id: "123", text: "청소하기", status: "active" },
+    // { id: "124", text: "장보기", status: "active" },
   ]);
   const handleAdd = (todo) => setTodos([...todos, todo]);
   const handleUpdate = (updated) => setTodos(todos.map((t) => (t.id === updated.id ? updated : t)));
