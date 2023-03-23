@@ -19,7 +19,10 @@ export default function TodoList({ filter }) {
   return (
     <section
       className={styles.container}
-      style={{ backgroundColor: darkMode ? "var(--color-white)" : "var(--color-grey)" }}
+      style={{
+        backgroundColor: darkMode ? "var(--color-white)" : "var(--color-grey)",
+        transition: 0.3,
+      }}
     >
       <ul className={styles.list}>
         {filtered.map((item) => (
