@@ -1,9 +1,8 @@
 .container {
-  height: 84.2%;
+  height: 87.1%;
   min-height: 0;
   display: flex;
   flex-direction: column;
-  margin: 1rem 0;
 }
 .list {
   flex: 1 1 auto;

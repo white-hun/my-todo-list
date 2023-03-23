@@ -6,6 +6,8 @@
   --color-grey: #282c34;
   --color-dark-grey: #20232a;
   --color-white: #f5f5f5;
+  --color-red: #f92a0e;
+  --color-orange: #ff7300;
 }
 body {
   margin: 0;

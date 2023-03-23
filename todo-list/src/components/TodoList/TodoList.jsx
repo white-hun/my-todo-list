@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { DarkModeContext } from "../../context/DarkModeContext";
 import AddTodo from "../AddTodo/AddTodo";
 // import Icon from "../Icon";
 import Todo from "../Todo/Todo";
 import styles from "./TodoList.module.css";
 
 export default function TodoList({ filter }) {
+  const { darkMode } = useContext(DarkModeContext);
+
   const [todos, setTodos] = useState([
     // { id: "123", text: "청소하기", status: "active" },
     // { id: "124", text: "장보기", status: "active" },
@@ -14,7 +17,10 @@ export default function TodoList({ filter }) {
   const handleDelete = (deleted) => setTodos(todos.filter((t) => t.id !== deleted.id));
   const filtered = getFilteredItem(todos, filter);
   return (
-    <section className={styles.container}>
+    <section
+      className={styles.container}
+      style={{ backgroundColor: darkMode ? "var(--color-white)" : "var(--color-grey)" }}
+    >
       <ul className={styles.list}>
         {filtered.map((item) => (
           <Todo key={item.id} todo={item} onUpdate={handleUpdate} onDelete={handleDelete} />

@@ -16,6 +16,10 @@
   border-bottom-left-radius: 8px;
   padding-left: 0.8rem;
 }
+.input::placeholder {
+  color: var(--color-react-blue);
+  opacity: 0.6;
+}
 .button {
   width: 100px;
   font-size: 1.4rem;

@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { DarkModeContext } from "../../context/DarkModeContext";
 import styles from "./AddTodo.module.css";
 
 export default function AddTodo({ onAdd }) {
+  const { darkMode } = useContext(DarkModeContext);
   const [text, setText] = useState("");
   const handleChange = (e) => setText(e.target.value);
   const handleSubmit = (e) => {
@@ -14,15 +16,25 @@ export default function AddTodo({ onAdd }) {
     setText("");
   };
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
+    <form
+      className={styles.form}
+      onSubmit={handleSubmit}
+      style={{
+        backgroundColor: darkMode ? "var(--color-ultra-light-grey)" : "var(--color-dark-grey)",
+      }}
+    >
       <input
         className={styles.input}
         type="text"
         placeholder="write & enter"
         value={text}
         onChange={handleChange}
+        style={{
+          backgroundColor: darkMode ? "var(--color-white)" : "var(--color-grey)",
+          color: darkMode ? "var(--color-dark-grey)" : "var(--color-react-blue)",
+        }}
       />
-      <button className={styles.button}>추가</button>
+      <button className={styles.button}>Add</button>
     </form>
   );
 }
