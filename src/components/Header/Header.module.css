@@ -18,7 +18,7 @@
   font-weight: 600;
   background: none;
   text-transform: capitalize;
-
+  transition: all 0.3s ease-in-out;
   padding: 0 0.7rem;
   opacity: 0.6;
 }
