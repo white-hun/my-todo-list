@@ -9,7 +9,7 @@ export default function App() {
   return (
     <>
       <Header filters={filters} filter={filter} onChangeFilter={(value) => setFilter(value)} />
-      {/* <Icon /> */}
+      <Icon />
       <TodoList filter={filter} />
     </>
   );

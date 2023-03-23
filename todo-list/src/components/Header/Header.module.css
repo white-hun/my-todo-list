@@ -9,14 +9,17 @@
 
 .filters {
   display: flex;
+  z-index: 999;
 }
 .filter {
   color: var(--color-react-blue);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
   background: none;
+  text-transform: capitalize;
+
   padding: 0 0.7rem;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .filter:hover,
 .filter.selected {
@@ -26,5 +29,5 @@
   content: "";
   display: block;
   margin-top: 0.2rem;
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--color-react-blue);
 }
