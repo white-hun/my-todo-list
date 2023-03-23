@@ -26,4 +26,5 @@
 .button:hover {
   color: var(--color-red);
   transform: scale(1.1);
+  will-change: auto;
 }

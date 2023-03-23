@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { DarkModeContext } from "../../context/DarkModeContext";
 import { BsMoon } from "react-icons/bs";
-import { BsSun } from "react-icons/bs";
+import { CgSun } from "react-icons/cg";
 import styles from "./DarkMode.module.css";
 
 export default function DarkMode() {
@@ -12,9 +12,9 @@ export default function DarkMode() {
     <button
       className={styles.button}
       onClick={handleMode}
-      style={{ color: darkMode ? "var(--color-orange)" : "var(--color-react-blue)" }}
+      style={{ color: darkMode ? "var(--color-orange)" : "var(--color-yellow)" }}
     >
-      {darkMode ? <BsSun /> : <BsMoon />}
+      {darkMode ? <CgSun /> : <BsMoon />}
     </button>
   );
 }
