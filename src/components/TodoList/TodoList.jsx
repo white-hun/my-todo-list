@@ -21,7 +21,6 @@ export default function TodoList({ filter }) {
       className={styles.container}
       style={{
         backgroundColor: darkMode ? "var(--color-white)" : "var(--color-grey)",
-        transition: 0.3,
       }}
     >
       <ul className={styles.list}>
