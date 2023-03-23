@@ -3,10 +3,10 @@
   display: flex;
   padding: 1.4rem 1rem;
   background-color: var(--color-white);
+  z-index: 999;
 }
 .input {
   flex: 1 0 auto;
-  z-index: 999;
   height: 3rem;
   font-size: 1.4rem;
   border: none;
@@ -22,7 +22,6 @@
 }
 .button {
   width: 100px;
-  z-index: 999;
   font-size: 1.4rem;
   font-weight: bold;
   color: var(--color-white);
