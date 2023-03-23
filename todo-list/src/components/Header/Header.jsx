@@ -1,52 +1,18 @@
-// import React from "react";
-
-// export default function Header({ filters, filter, onFilterChange }) {
-//   return (
-//     <ul>
-//       {filters.map((value, index) => (
-//         <li key={index}>
-//           <button onClick={() => onFilterChange(value)}>{value}</button>
-//         </li>
-//       ))}
-//     </ul>
-//   );
-// }
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//-------------------------------------------------------------------
 import React from "react";
+import styles from "./Header.module.css";
 
 export default function Header({ filters, filter, onChangeFilter }) {
   return (
-    <header>
-      <ul>
+    <header className={styles.header}>
+      <ul className={styles.filters}>
         {filters.map((value, index) => (
           <li key={index}>
-            <button onClick={() => onChangeFilter(value)}>{value}</button>
+            <button
+              className={`${styles.filter} ${filter === value && styles.selected}`}
+              onClick={() => onChangeFilter(value)}
+            >
+              {value}
+            </button>
           </li>
         ))}
       </ul>

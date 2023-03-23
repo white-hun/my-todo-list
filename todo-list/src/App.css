@@ -5,11 +5,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   position: fixed;
+  /* visibility: hidden; */
 }
 
 .App-logo {
-  width: 300px;
-  height: 300px;
+  overflow: hidden;
+  width: 350px;
+  height: 350px;
   height: 58vmin;
   pointer-events: none;
 }

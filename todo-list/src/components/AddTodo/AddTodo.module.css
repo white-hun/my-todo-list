@@ -1,0 +1,24 @@
+.form {
+  width: 100%;
+  display: flex;
+  padding: 1.4rem 1rem;
+  background-color: var(--color-white);
+}
+.input {
+  flex: 1 0 auto;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.button {
+  width: 80px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-react-blue);
+  background-color: var(--color-ultra-light-grey);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

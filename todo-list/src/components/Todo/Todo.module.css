@@ -1,0 +1,29 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem 0;
+  transition: all 0.1s ease-in-out;
+}
+.checkbox {
+  margin-left: 1.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.text {
+  z-index: 999;
+  flex: 1 0 auto;
+  margin-left: 1.2rem;
+  font-size: 1.5rem;
+}
+.button {
+  margin-top: 0.3rem;
+  margin-right: 1rem;
+  background: none;
+  font-size: 1.2rem;
+  transition: all 0.1s ease-in-out;
+}
+.button:hover {
+  color: red;
+  transform: scale(1.1);
+}
