@@ -19,7 +19,7 @@
   padding-left: 0.8rem;
 }
 .input::placeholder {
-  color: var(--color-react-blue);
+  color: var(--color-placeholder);
   opacity: 0.6;
 }
 .button {
@@ -27,7 +27,7 @@
   font-size: 1.4rem;
   font-weight: bold;
   color: var(--color-add-button-text);
-  background-color: var(--color-react-blue);
+  background-color: var(--color-add-button);
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }

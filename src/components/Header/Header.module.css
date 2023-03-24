@@ -12,7 +12,7 @@
   z-index: 999;
 }
 .filter {
-  color: var(--color-react-blue);
+  color: var(--color-filter);
   font-size: 1.4rem;
   font-weight: 600;
   background: none;
@@ -29,5 +29,5 @@
   content: "";
   display: block;
   margin-top: 0.2rem;
-  border: 1px solid var(--color-react-blue);
+  border: 1px solid var(--color-filter);
 }
