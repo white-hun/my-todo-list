@@ -2,6 +2,7 @@ import React from "react";
 import { useDarkMode } from "../../context/DarkModeContext";
 import { BsMoon } from "react-icons/bs";
 import { CgSun } from "react-icons/cg";
+import { TbFlower } from "react-icons/tb";
 import styles from "./DarkMode.module.css";
 
 export default function DarkMode() {
@@ -9,7 +10,8 @@ export default function DarkMode() {
 
   return (
     <button className={styles.button} onClick={toggle}>
-      {darkMode ? <BsMoon /> : <CgSun />}
+      {darkMode ? <TbFlower /> : <CgSun />}
+      {/* {darkMode ? <BsMoon /> : <CgSun />} */}
     </button>
   );
 }
