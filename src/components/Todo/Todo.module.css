@@ -15,16 +15,18 @@
   flex: 1 0 auto;
   margin-left: 1.2rem;
   font-size: 1.5rem;
+  color: var(--color-text);
 }
 .button {
   margin-top: 0.3rem;
   margin-right: 1rem;
   background: none;
   font-size: 1.2rem;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: var(--color-delete-button);
 }
 .button:hover {
-  color: var(--color-red);
+  color: var(--color-delete-hover);
   transform: scale(1.1);
   will-change: auto;
 }

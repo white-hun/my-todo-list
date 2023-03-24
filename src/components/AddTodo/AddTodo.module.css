@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   padding: 1.4rem 1rem;
-  background-color: var(--color-white);
+  background-color: var(--color-form);
   z-index: 999;
 }
 .input {
@@ -11,6 +11,8 @@
   font-size: 1.4rem;
   border: none;
   outline: none;
+  color: var(--color-input-text);
+  background-color: var(--color-bg-input);
   caret-color: var(--color-react-blue);
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -24,8 +26,11 @@
   width: 100px;
   font-size: 1.4rem;
   font-weight: bold;
-  color: var(--color-white);
+  color: var(--color-add-button-text);
   background-color: var(--color-react-blue);
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+.button:hover {
+  cursor: pointer;
 }

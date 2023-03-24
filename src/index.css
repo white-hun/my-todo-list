@@ -1,14 +1,30 @@
 :root {
   --color-react-blue: #61dafb;
+  --color-theme-button: #ff7f00;
+  --color-header: #f5f5f5;
   --color-bg: #fdfffd;
-  --color-ultra-light-grey: #edeff2;
-  --color-light-grey: #aaa7a7;
-  --color-grey: #282c34;
-  --color-dark-grey: #20232a;
-  --color-white: #f5f5f5;
-  --color-red: #f92a0e;
-  --color-orange: #ff7f00;
-  --color-yellow: #ffe500;
+  --color-form: #f5f5f5;
+  --color-text: #20232a;
+  --color-delete-button: #20232a;
+  --color-delete-hover: #f92a0e;
+  --color-bg-input: #fdfffd;
+  --color-input-text: #20232a;
+
+  --color-add-button-text: #fdfffd;
+}
+
+html.dark {
+  --color-theme-button: #ffe500;
+  --color-header: #20232a;
+  --color-bg: #282c34;
+  --color-form: #20232a;
+  --color-text: #f5f5f5;
+  --color-delete-button: #61dafb;
+  --color-delete-hover: #f92a0e;
+  --color-bg-input: #282c34;
+  --color-input-text: #61dafb;
+
+  --color-add-button-text: #20232a;
 }
 body {
   margin: 0;

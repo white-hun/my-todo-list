@@ -1,20 +1,11 @@
-import React, { useContext } from "react";
-import { DarkModeContext } from "../../context/DarkModeContext";
+import React from "react";
 import DarkMode from "../DarkMode/DarkMode";
 import styles from "./Header.module.css";
 
 export default function Header({ filters, filter, onChangeFilter }) {
-  const { darkMode } = useContext(DarkModeContext);
   return (
-    <header
-      className={styles.header}
-      style={{
-        backgroundColor: darkMode ? "var(--color-ultra-light-grey)" : "var(--color-dark-grey)",
-      }}
-    >
-      <>
-        <DarkMode />
-      </>
+    <header className={styles.header}>
+      <DarkMode />
       <ul className={styles.filters}>
         {filters.map((value, index) => (
           <li key={index}>
