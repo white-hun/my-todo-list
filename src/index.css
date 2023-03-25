@@ -9,10 +9,13 @@
   --color-delete-button: #20232a;
   --color-delete-hover: #f92a0e;
   --color-bg-input: #fdfffd;
+  --color-caret: #61dafb;
   --color-input-text: #20232a;
   --color-placeholder: #61dafb;
   --color-add-button: #61dafb;
   --color-add-button-text: #fdfffd;
+  --color-scollbar-thumb: #bdbdbd;
+  --color-scollbar-thumb-hover: #61dafb;
   /* box-shadow: 0px 0px 75px 19px rgba(97, 218, 251, 0.84);
   -webkit-box-shadow: 0px 0px 75px 19px rgba(97, 218, 251, 0.84);
   -moz-box-shadow: 0px 0px 75px 19px rgba(97, 218, 251, 0.84); */
@@ -45,10 +48,13 @@ html.dark {
   --color-delete-button: #b945f8;
   --color-delete-hover: #f92a0e;
   --color-bg-input: #fcf6ff;
+  --color-caret: #b945f8;
   --color-input-text: #b945f8;
   --color-placeholder: #b945f8;
   --color-add-button: #e1aaff;
   --color-add-button-text: #fcf6ff;
+  --color-scollbar-thumb: #bdbdbd;
+  --color-scollbar-thumb-hover: #b945f8;
   /* box-shadow: 0px 0px 75px 19px rgba(225, 170, 255, 0.84);
   -webkit-box-shadow: 0px 0px 75px 19px rgba(225, 170, 255, 0.84);
   -moz-box-shadow: 0px 0px 75px 19px rgba(225, 170, 255, 0.84); */
@@ -105,8 +111,8 @@ button {
   background-color: var(--color-bg);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-light-grey);
+  background-color: var(--color-scollbar-thumb);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-react-blue);
+  background-color: var(--color-scollbar-thumb-hover);
 }
