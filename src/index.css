@@ -36,6 +36,8 @@
   --color-placeholder: #61dafb;
   --color-add-button: #61dafb;
   --color-add-button-text: #20232a;
+  --color-scollbar-thumb: #bdbdbd;
+  --color-scollbar-thumb-hover: #61dafb;
 } */
 html.dark {
   --color-accent: #b945f8;
