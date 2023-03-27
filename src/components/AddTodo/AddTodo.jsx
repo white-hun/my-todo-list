@@ -7,15 +7,15 @@ export default function AddTodo({ onAdd }) {
   const handleChange = (e) => setText(e.target.value);
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (text.trim().length === 0) {
-      return;
-    }
+    // if (text.trim().length === 0) {
+    //   return;
+    // }
     onAdd({ id: uuidv4(), text: text, status: "active" });
     setText("");
   };
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <input
+      <textarea
         className={styles.input}
         type="text"
         placeholder="write & enter"
