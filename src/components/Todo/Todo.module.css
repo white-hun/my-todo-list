@@ -8,6 +8,7 @@
   margin-left: 1.5rem;
   width: 1.2rem;
   height: 1.2rem;
+  color: var(--color-header);
 }
 .text {
   z-index: 999;
@@ -15,6 +16,11 @@
   margin-left: 1.2rem;
   font-size: 1.5rem;
   color: var(--color-text);
+  transition: all 0.3s ease-in-out;
+}
+.text.selected {
+  opacity: 0.5;
+  text-decoration: line-through;
   transition: all 0.3s ease-in-out;
 }
 .button {
